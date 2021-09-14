@@ -36,7 +36,7 @@
   <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
     <div class="container d-flex">
       <div class="contact-info mr-auto">
-        <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a>
+        <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">	surfsafi@gmail.com</a>
         <i class="icofont-phone"></i> <a href="https://wa.me/0636060655">0636060655</a> 
         <i class="icofont-google-map"></i> Av. Mohamed Belkhadir, Safi Maroc 46000
       </div>
@@ -57,28 +57,12 @@
         <ul>
           <li class="active"><a href="/">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#departments">Avantages</a></li>
+          <li><a href="#services">Packages</a></li>
+          <li><a href="#departments">Other</a></li>
           <li><a href="#doctors">Team</a></li>
-          {{-- <li class="drop-down"><a href="">Drop Down</a> --}}
-            {{-- <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Deep Drop Down</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul> --}}
-          </li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
-
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -158,38 +142,32 @@
 
         <div class="row">
           <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch">
-            {{-- <a href="https://www.youtube.com/watch?v=HMmv2WMQbo4&t=21s" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true">
-            </a> --}}
           </div>
 
           <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
             <h3>About Safi surf club</h3>
-            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
+            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.
+            </p>
 
             <div class="icon-box">
               <div class="icon"><i class="bx bx-fingerprint"></i></div>
               <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti expedita nulla rem velit, dicta illum debitis</p>
             </div>
 
             <div class="icon-box">
               <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <h4 class="title"><a href="">Competition</a></h4>
+              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti expedita nulla rem velit, dicta illum debitis</p>
             </div>
 
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-atom"></i></div>
-              <h4 class="title"><a href="">Dine Pad</a></h4>
-              <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
-            </div>
 
           </div>
         </div>
 
       </div>
     </section><!-- End About Section -->
-{{-- 
+
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
       <div class="container">
@@ -198,98 +176,87 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
-              <i class="icofont-doctor-alt"></i>
-              <span data-toggle="counter-up">85</span>
-              <p>Doctors</p>
+              <img src="./assets/img/gotchaLogo.jpg" alt="" width="100px" >
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
             <div class="count-box">
-              <i class="icofont-patient-bed"></i>
-              <span data-toggle="counter-up">18</span>
-              <p>Departments</p>
+              <img src="./assets/img/logo-riad.png" alt="" width="105px" >
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
-              <i class="icofont-laboratory"></i>
-              <span data-toggle="counter-up">8</span>
-              <p>Research Labs</p>
+              <img src="./assets/img/surf-logo.jpg" alt="" width="70px" >
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
-              <i class="icofont-award"></i>
-              <span data-toggle="counter-up">150</span>
-              <p>Awards</p>
+              <img src="./assets/img/gotchaLogo.jpg" alt="" width="100px" >
             </div>
           </div>
 
         </div>
 
       </div>
-    </section><!-- End Counts Section --> --}}
+    </section><!-- End Counts Section -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container">
 
         <div class="section-title">
-          <h2>Services</h2>
+          <h2>Packages</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
+          <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
+            <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+                <div class="col">
+                    <div class="card h-100 shadow-sm img-card"> <img src="	https://safisurfclub.com/wp-content/uploads/2020/12/surf-safi-12.jpg?id=1163" class="card-img-top" alt="...">
+                        <div class="label-top shadow-sm">Pack 1</div>
+                        <div class="card-body">
+                            <div class="clearfix mb-3"> <span class="float-start badge ">12354.00€</span> </div>
+                            <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5>
+                            <div class="clearfix mb-1"> <span class="float-start"><i class="far fa-question-circle"></i></span> <span class="float-end"><i class="fas fa-plus"></i></span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 shadow-sm"> <img src="./assets/img/surf-safi-14.jpg" class="card-img-top" alt="...">
+                      <div class="label-top shadow-sm">Pack 2</div>
+                      <div class="card-body">
+                          <div class="clearfix mb-3"> <span class="float-start badge ">12354.00€</span> </div>
+                          <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5>
+                          <div class="clearfix mb-1"> <span class="float-start"><i class="far fa-question-circle"></i></span> <span class="float-end"><i class="fas fa-plus"></i></span> </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 shadow-sm"> <img src="	https://safisurfclub.com/wp-content/uploads/2020/12/surf-safi-13.jpg?id=1164" class="card-img-top" alt="...">
+                    <div class="label-top shadow-sm">Pack 3</div>
+                    <div class="card-body">
+                        <div class="clearfix mb-3"> <span class="float-start badge ">12354.00€</span> </div>
+                        <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5>
+                        <div class="clearfix mb-1"> <span class="float-start"><i class="far fa-question-circle"></i></span> <span class="float-end"><i class="fas fa-plus"></i></span> </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 shadow-sm"> <img src="https://safisurfclub.com/wp-content/uploads/2020/12/surf-safi-8.jpg?id=921" class="card-img-top" alt="...">
+                    <div class="label-top shadow-sm">Pack 4</div>
+                    <div class="card-body">
+                        <div class="clearfix mb-3"> <span class="float-start badge ">12354.00€</span> </div>
+                        <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5>
+                        <div class="clearfix mb-1"> <span class="float-start"><i class="far fa-question-circle"></i></span> <span class="float-end"><i class="fas fa-plus"></i></span> </div>
+                    </div>
+                </div>
+              </div>
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="icon-box">
-              <div class="icon"><i class="icofont-heart-beat"></i></div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <div class="icon-box">
-              <div class="icon"><i class="icofont-drug"></i></div>
-              <h4><a href="">Sed ut perspiciatis</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="icofont-dna-alt-2"></i></div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box">
-              <div class="icon"><i class="icofont-heartbeat"></i></div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box">
-              <div class="icon"><i class="icofont-disabled"></i></div>
-              <h4><a href="">Dele cardo</a></h4>
-              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box">
-              <div class="icon"><i class="icofont-autism"></i></div>
-              <h4><a href="">Divera don</a></h4>
-              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-            </div>
-          </div>
+        </div>
 
         </div>
 
@@ -301,8 +268,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Make an Appointment</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Book your surf session</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum autem magnam similique tempora esse, dignissimos dolores officiis dolorem et cupiditate temporibus inventore repellat. Obcaecati suscipit quis quisquam repudiandae repellat nobis.</p>
         </div>
 
         <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
@@ -322,7 +289,7 @@
           </div>
           <div class="form-row">
             <div class="col-md-4 form-group">
-              <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="date" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group">
@@ -354,7 +321,7 @@
             <div class="error-message"></div>
             <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
           </div>
-          <div class="text-center"><button type="submit">Make an Appointment</button></div>
+          <div class="text-center"><button type="submit">Book Now</button></div>
         </form>
 
       </div>
@@ -365,27 +332,24 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Departments</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Another Services</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae animi, nesciunt fugiat sint possimus deserunt! Culpa magnam quos voluptas facere, neque unde eos totam asperiores iure dolores cum officiis voluptatibus!</p>
         </div>
 
         <div class="row">
           <div class="col-lg-3">
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item">
-                <a class="nav-link active show" data-toggle="tab" href="#tab-1">Cardiology</a>
+                <a class="nav-link active show" data-toggle="tab" href="#tab-1">SurfShop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-2">Neurology</a>
+                <a class="nav-link" data-toggle="tab" href="#tab-2">Reataurant</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-3">Hepatology</a>
+                <a class="nav-link" data-toggle="tab" href="#tab-3">Yoga</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-4">Pediatrics</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-5">Eye Care</a>
+                <a class="nav-link" data-toggle="tab" href="#tab-5">View</a>
               </li>
             </ul>
           </div>
@@ -394,60 +358,48 @@
               <div class="tab-pane active show" id="tab-1">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Cardiology</h3>
+                    <h3>Surf Shop</h3>
                     <p class="font-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
                     <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-1.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/shop.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
               <div class="tab-pane" id="tab-2">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Et blanditiis nemo veritatis excepturi</h3>
+                    <h3>Beach restaurant</h3>
                     <p class="font-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
                     <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-2.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/lezat-beach-restaurants.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
               <div class="tab-pane" id="tab-3">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-                    <p class="font-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
-                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-3.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-4">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
+                    <h3>Yoga session</h3>
                     <p class="font-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
                     <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-4.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/yoga.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
               <div class="tab-pane" id="tab-5">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                    <h3>View</h3>
                     <p class="font-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
                     <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-5.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/sunset.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -463,24 +415,23 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Doctors</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Team</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut expedita excepturi dolorem, aspernatur nesciunt totam consequuntur eaque quaerat atque optio, minus, dolores vero soluta quam vel nisi fugiat. Illum, alias!</p>
         </div>
 
         <div class="row">
 
           <div class="col-lg-6">
             <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/team1.jpg" height="130px" width="142px" alt=""></div>
               <div class="member-info">
                 <h4>Walter White</h4>
-                <span>Chief Medical Officer</span>
+                <span>Coach</span>
                 <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
                   <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
                 </div>
               </div>
             </div>
@@ -488,16 +439,15 @@
 
           <div class="col-lg-6 mt-4 mt-lg-0">
             <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/team1.jpg" height="130px" width="142px" alt=""></div>
               <div class="member-info">
                 <h4>Sarah Jhonson</h4>
-                <span>Anesthesiologist</span>
+                <span>Coach</span>
                 <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
                   <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
                 </div>
               </div>
             </div>
@@ -505,16 +455,15 @@
 
           <div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/team1.jpg" height="130px" width="142px" alt=""></div>
               <div class="member-info">
                 <h4>William Anderson</h4>
-                <span>Cardiology</span>
+                <span>Coach</span>
                 <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
                   <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
                 </div>
               </div>
             </div>
@@ -522,16 +471,15 @@
 
           <div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/team1.jpg" height="130px" width="142px" alt=""></div>
               <div class="member-info">
                 <h4>Amanda Jepson</h4>
-                <span>Neurosurgeon</span>
+                <span>Coach</span>
                 <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
                   <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
                 </div>
               </div>
             </div>
@@ -608,6 +556,10 @@
     <section id="testimonials" class="testimonials">
       <div class="container">
 
+        <div class="section-title">
+          <h2>Testimonials</h2>
+        </div>
+
         <div class="owl-carousel testimonials-carousel">
 
           <div class="testimonial-wrap">
@@ -676,7 +628,6 @@
           </div>
 
         </div>
-
       </div>
     </section><!-- End Testimonials Section -->
 
@@ -696,23 +647,23 @@
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-1.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+                <img src="assets/img/gallery/rmz.jpg" alt="" width="400px" height="300px">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-2.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              <a href="" class="venobox" data-gall="gallery-item">
+                <img src="assets/img/gallery/cap.jpg" alt="" width="400px" height="300px">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-3.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              <a href="" class="venobox" data-gall="gallery-item">
+                <img src="assets/img/gallery/ankr.jpg" alt="" width="400px" height="300px">
               </a>
             </div>
           </div>
@@ -720,7 +671,7 @@
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-4.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+                <img src="assets/img/gallery/bord.jpg" alt="" width="400px" height="300px">
               </a>
             </div>
           </div>
@@ -728,7 +679,7 @@
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-5.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+                <img src="assets/img/gallery/img1.jpg" alt="" width="400px" height="300px">
               </a>
             </div>
           </div>
@@ -736,7 +687,7 @@
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-6.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+                <img src="assets/img/gallery/sunset.jpg" alt="" width="400px" height="300px">
               </a>
             </div>
           </div>
@@ -744,7 +695,7 @@
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-7.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+                <img src="assets/img/gallery/rsvu.jpg" alt="" width="400px" height="300px">
               </a>
             </div>
           </div>
@@ -752,7 +703,7 @@
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-8.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+                <img src="assets/img/gallery/ex1.jpg" alt="" width="400px" height="300px">
               </a>
             </div>
           </div>
@@ -849,7 +800,7 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Medilab</h3>
+            <h3>Safi surf Club</h3>
             <p>
               A108 Adam Street <br>
               New York, NY 535022<br>
@@ -859,60 +810,28 @@
             </p>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
+          <div class="col-lg-5 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li class="active"><a href="/">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Packages</a></li>
+              <li><a href="#departments">Other</a></li>
+              <li><a href="#doctors">Team</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
           </div>
 
         </div>
-      </div>
-    </div>
-
-    <div class="container d-md-flex py-4">
-
-      <div class="mr-md-auto text-center text-md-left">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Medilab</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
-      </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
     </div>
   </footer><!-- End Footer -->
