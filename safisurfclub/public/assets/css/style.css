@@ -12,6 +12,10 @@ a {
   color: #00adef;
 }
 
+nav{
+  background: white;
+}
+
 a:hover {
   color: #00437e;
   text-decoration: none;
