@@ -21,7 +21,8 @@ class CreateReservationsTable extends Migration
             $table->string("date");            
             $table->integer("Nperson");            
             $table->string("message");            
-            $table->foreignId('package_id')->constrained();
+            $table->string("package_id");            
+            // $table->foreignId('package_id')->constrained();
             $table->timestamps();
         });
     }

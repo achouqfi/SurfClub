@@ -272,7 +272,8 @@
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum autem magnam similique tempora esse, dignissimos dolores officiis dolorem et cupiditate temporibus inventore repellat. Obcaecati suscipit quis quisquam repudiandae repellat nobis.</p>
         </div>
 
-        <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+        <form action="{{ url('reservation') }}" method="POST" enctype="multipart/form-data" role="form" class="php-email-form">
+          @csrf
           <div class="form-row">
             <div class="col-md-4 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
@@ -289,11 +290,11 @@
           </div>
           <div class="form-row">
             <div class="col-md-4 form-group">
-              <input type="date" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="date" name="date" class="form-control "  >
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group">
-              <select name="department" id="department" class="form-control">
+              <select name="package_id" id="department" class="form-control">
                 <option value="">Select Department</option>
                 <option value="Department 1">Department 1</option>
                 <option value="Department 2">Department 2</option>
@@ -302,18 +303,13 @@
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group">
-              <select name="doctor" id="doctor" class="form-control">
-                <option value="">Select Doctor</option>
-                <option value="Doctor 1">Doctor 1</option>
-                <option value="Doctor 2">Doctor 2</option>
-                <option value="Doctor 3">Doctor 3</option>
-              </select>
+              <input type="number" name="Nperson" class="form-control " >
               <div class="validate"></div>
             </div>
           </div>
 
           <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)" ></textarea>
             <div class="validate"></div>
           </div>
           <div class="mb-3">
@@ -353,6 +349,7 @@
               </li>
             </ul>
           </div>
+          
           <div class="col-lg-9 mt-4 mt-lg-0">
             <div class="tab-content">
               <div class="tab-pane active show" id="tab-1">
@@ -756,7 +753,9 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="{{ url('contact') }}" method="post" role="form" class="php-email-form" enctype="multipart/form-data">
+              @csrf
+
               <div class="form-row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
