@@ -2,49 +2,6 @@
 
 @section('content')
     <div class="container-fluid px-4">
-        <div class="row g-3 my-2">
-            <div class="col-md-3">
-                <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                    <div>
-                        <h3 class="fs-2">720</h3>
-                        <p class="fs-5">Reservation</p>
-                    </div>
-                    <i class="fas fa-swimmer fs-1 primary-text border rounded-full secondary-bg p-3"></i>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                    <div>
-                        <h3 class="fs-2">490</h3>
-                        <p class="fs-5">Message</p>
-                    </div>
-                    <i
-                        class="fas fa-envelope fs-1 primary-text border rounded-full secondary-bg p-3"></i>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                    <div>
-                        <h3 class="fs-2">99</h3>
-                        <p class="fs-5">Newsletter</p>
-                    </div>
-                    <i class="fas fa-address-card fs-1 primary-text border rounded-full secondary-bg p-3"></i>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                    <div>
-                        <h3 class="fs-2">25</h3>
-                        <p class="fs-5">FeedBack</p>
-                    </div>
-                    <i class="fas fa-comment-dots fs-1 primary-text border rounded-full secondary-bg p-3"></i>
-                </div>
-            </div>
-        </div>
-
         <div class="container-xxl">
             <div class="table-responsive">
                 <div class="table-wrapper">

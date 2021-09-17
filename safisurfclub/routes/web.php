@@ -40,7 +40,7 @@ Route::delete('/contact/{id}','App\Http\Controllers\ContactController@destroy');
 // reservation route
 Route::get('/reservation/admin','App\Http\Controllers\ReservationController@index');
 Route::post('/reservation','App\Http\Controllers\ReservationController@store');
-Route::get('/reservation/table','App\Http\Controllers\ReservationController@admin');
+// Route::get('/reservation/table','App\Http\Controllers\ReservationController@admin');
 Route::put('/update/reservation/{id}','App\Http\Controllers\ReservationController@UserUpdate');
 Route::delete('/annulation/{id}','App\Http\Controllers\ReservationController@destroy');
 

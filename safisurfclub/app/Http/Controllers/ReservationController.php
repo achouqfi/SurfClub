@@ -10,9 +10,8 @@ class ReservationController extends Controller
     public function index()
     {
         //affichage des Reservations dans la partie admin
-        $Reservation= Reservation::paginate(6);
-        return view('dashboard',["Reservations"=>$Reservation]);
-
+        $Reservation= Reservation::paginate(7);
+        return view('admin.reservation',["Reservations"=>$Reservation]);
     }
 
     public function frontOffice()

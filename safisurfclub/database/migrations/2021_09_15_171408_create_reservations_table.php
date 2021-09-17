@@ -18,7 +18,7 @@ class CreateReservationsTable extends Migration
             $table->string("name");            
             $table->string("email");            
             $table->string("phone");            
-            $table->string("date");            
+            $table->string("date");
             $table->integer("Nperson");            
             $table->string("message");            
             $table->string("package_id");            

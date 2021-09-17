@@ -8,8 +8,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <title>Dashboard</title>
-    <link href="assets/css/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ URL::asset('assets/css/dashboard.css') }}">
 
 </head>
 
@@ -21,21 +28,20 @@
                  <img src="./assets/img/logo.png" alt="" width="50px" > <h3>Safi Surf Club</h3>
             </div>
             <div class="list-group list-group-flush my-3">
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active"><i
+                <a href="/home" class="list-group-item list-group-item-action bg-transparent second-text active"><i
                         class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                <a href="/reservation/admin" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-swimmer me-2"></i>Reservation</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                <a href="/contact/admin" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-envelope me-2"></i>Message</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                <a href="/newsletter" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-address-card me-2"></i>Newsletter</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                <a href="/package/table" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-archive me-2"></i>Package</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                <a href="/gallery/table" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-photo-video me-2"></i>Gallery</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                <a href="/feedBack/table" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-comment-dots me-2"></i>FeedBack</a>
-
             </div>
         </div>
         <!-- /#sidebar-wrapper -->

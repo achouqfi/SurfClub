@@ -2,61 +2,18 @@
 
 @section('content')
     <div class="container-fluid px-4">
-        <div class="row g-3 my-2">
-            <div class="col-md-3">
-                <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                    <div>
-                        <h3 class="fs-2">720</h3>
-                        <p class="fs-5">Reservation</p>
-                    </div>
-                    <i class="fas fa-swimmer fs-1 primary-text border rounded-full secondary-bg p-3"></i>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                    <div>
-                        <h3 class="fs-2">490</h3>
-                        <p class="fs-5">Message</p>
-                    </div>
-                    <i
-                        class="fas fa-envelope fs-1 primary-text border rounded-full secondary-bg p-3"></i>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                    <div>
-                        <h3 class="fs-2">99</h3>
-                        <p class="fs-5">Newsletter</p>
-                    </div>
-                    <i class="fas fa-address-card fs-1 primary-text border rounded-full secondary-bg p-3"></i>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                    <div>
-                        <h3 class="fs-2">25</h3>
-                        <p class="fs-5">FeedBack</p>
-                    </div>
-                    <i class="fas fa-comment-dots fs-1 primary-text border rounded-full secondary-bg p-3"></i>
-                </div>
-            </div>
-        </div>
-
         <div class="container-xxl">
             <div class="table-responsive">
                 <div class="table-wrapper">
                     <div class="table-title">
                         <div class="row">
                             <div class="col-sm-6">
-                                <h2>Last <b>Reservations</b></h2>
+                                <h2><b>Packages</b> List</h2>
                             </div>
-                            {{-- <div class="col-sm-6">
+                            <div class="col-sm-6">
                                 <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Employee</span></a>
                                 <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>						
-                            </div> --}}
+                            </div>
                         </div>
                     </div>
                     <table class="table table-striped table-hover">
@@ -142,7 +99,7 @@
                 </div>
             </div>        
         </div>
-        {{-- <!-- Edit Modal HTML -->
+        <!-- Edit Modal HTML -->
         <div id="addEmployeeModal" class="modal fade">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -211,8 +168,7 @@
                     </form>
                 </div>
             </div>
-        </div> --}}
-        
+        </div>
         <!-- Delete Modal HTML -->
         <div id="deleteEmployeeModal" class="modal fade">
             <div class="modal-dialog">
