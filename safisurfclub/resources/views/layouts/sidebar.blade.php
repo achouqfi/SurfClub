@@ -34,7 +34,7 @@
                         class="fas fa-swimmer me-2"></i>Reservation</a>
                 <a href="/contact/admin" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-envelope me-2"></i>Message</a>
-                <a href="/newsletter" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                <a href="/newsletter/admin" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-address-card me-2"></i>Newsletter</a>
                 <a href="/package/table" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-archive me-2"></i>Package</a>

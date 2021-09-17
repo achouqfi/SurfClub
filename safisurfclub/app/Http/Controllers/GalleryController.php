@@ -10,8 +10,8 @@ class GalleryController extends Controller
     public function index()
     {
         //
-        $Gallery= Gallery::paginate(6);
-        return view('admin.Gallery',["Gallery"=>$Gallery]);
+        $Gallery= Gallery::paginate(5);
+        return view('admin.Gallery',["photos"=>$Gallery]);
     }
 
     public function frontOffice()
@@ -43,6 +43,6 @@ class GalleryController extends Controller
     {
         //suppression des Gallery
         Gallery::destroy($id);
-        return redirect("Gallery")->with('dltGallery','Gallery are deleted');
+        return redirect()->back()->with('dltGallery','Gallery are deleted');
     }
 }

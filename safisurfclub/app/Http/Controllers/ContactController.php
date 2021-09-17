@@ -12,7 +12,7 @@ class ContactController extends Controller
     {
         //
         $Contact= Contact::paginate(6);
-        return view('admin.Contact',["Contact"=>$Contact]);
+        return view('admin.message',["Contacts"=>$Contact]);
     }
 
     public function store(Request $request)
@@ -32,7 +32,7 @@ class ContactController extends Controller
     {
         //suppression des Contact
         Contact::destroy($id);
-        return redirect("Contact")->with('dltContact','Contact are deleted');
+        return redirect()->back()->with('dltContact','Contact are deleted');
     }
 
 }

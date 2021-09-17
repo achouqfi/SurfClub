@@ -19,7 +19,6 @@ class FeedBackController extends Controller
         //affichage des FeedBack dans la partie user&clien
         $FeedBack= FeedBack::orderBy('id', 'DESC')->get();
         return view('index',["FeedBack"=>$FeedBack]);
-
     }
     public function store(Request $request)
     {

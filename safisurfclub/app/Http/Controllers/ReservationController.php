@@ -66,6 +66,6 @@ class ReservationController extends Controller
     {
         //suppression des Reservations
         Reservation::destroy($id);
-        return redirect("Reservation")->with('dltReservation','Reservation are deleted');
+        return redirect()->back();
     }
 }

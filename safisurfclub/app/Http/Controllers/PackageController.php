@@ -11,8 +11,7 @@ class PackageController extends Controller
     {
         //affichage des Packages dans la partie admin
         $Package= Package::paginate(6);
-        return view('admin.Package',["Packages"=>$Package]);
-
+        return view('admin.pack',["Packages"=>$Package]);
     }
 
     public function frontOffice()

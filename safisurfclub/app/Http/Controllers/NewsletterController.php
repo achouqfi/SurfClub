@@ -11,8 +11,8 @@ class NewsletterController extends Controller
     public function index()
     {
         //
-        $Newsletter= Newsletter::paginate(6);
-        return view('admin.Newsletter',["Newsletter"=>$Newsletter]);
+        $Newsletter= Newsletter::paginate(7);
+        return view('admin.newsletter',["Newsletters"=>$Newsletter]);
     }
 
     public function store(Request $request)
@@ -29,7 +29,7 @@ class NewsletterController extends Controller
     {
         //suppression des Newsletter
         Newsletter::destroy($id);
-        return redirect("Newsletter")->with('dltNewsletter','Newsletter are deleted');
+        return redirect()->back()->with('dltNewsletter','Newsletter are deleted');
     }
 
 }

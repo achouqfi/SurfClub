@@ -407,7 +407,7 @@
       </div>
     </section><!-- End Departments Section -->
 
-    <!-- ======= Doctors Section ======= -->
+    <!-- ======= Team Section ======= -->
     <section id="doctors" class="doctors">
       <div class="container">
 
@@ -623,10 +623,46 @@
               </p>
             </div>
           </div>
-
         </div>
       </div>
+
+      
     </section><!-- End Testimonials Section -->
+    <!-- ======= Appointment Section ======= -->
+    <section id="appointment" class="appointment section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Add Your FeedBack</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum autem magnam similique tempora esse, dignissimos dolores officiis dolorem et cupiditate temporibus inventore repellat. Obcaecati suscipit quis quisquam repudiandae repellat nobis.</p>
+        </div>
+
+        <form action="{{ url('feedBack') }}" method="POST" enctype="multipart/form-data" role="form" class="php-email-form">
+          @csrf
+          <div class="form-row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-6 form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" ></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Add Now</button></div>
+        </form>
+
+      </div>
+    </section><!-- End Appointment Section -->
 
     <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery">
@@ -825,8 +861,10 @@
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Our Newsletter</h4>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+            <form action="{{ url('newsleter') }}" method="post" >
+              @csrf
+              <input type="email" name="email">
+              <input type="submit" value="Subscribe">
             </form>
           </div>
 
