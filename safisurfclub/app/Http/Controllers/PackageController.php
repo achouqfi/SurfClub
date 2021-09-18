@@ -14,13 +14,13 @@ class PackageController extends Controller
         return view('admin.pack',["Packages"=>$Package]);
     }
 
-    public function frontOffice()
-    {
-        //affichage des Packages dans la partie user&clien
-        $Package= Package::orderBy('id', 'DESC')->get();
-        return view('index',["Packages"=>$Package]);
+    // public function frontOffice()
+    // {
+    //     //affichage des Packages dans la partie user&clien
+    //     $Package= Package::orderBy('id', 'DESC')->get();
+    //     return view('index',["Packages"=>$Package]);
 
-    }
+    // }
 
     public function store(Request $request)
     {
@@ -48,7 +48,7 @@ class PackageController extends Controller
     {
         //modification les Package
         $Package = Package::find($id);
-        return view('admin.EditPackage',["Package"=>$Package]);
+        return view('admin.EditPackage',["package"=>$Package]);
     }
 
     public function update(Request $request, $id)
@@ -71,7 +71,7 @@ class PackageController extends Controller
 
         $Package ->save();
 
-        return redirect()->back()->with('editPackage','modification are saved');
+        return redirect('/package/table')->with('editPackage','modification are saved');
     }
 
     public function destroy($id)

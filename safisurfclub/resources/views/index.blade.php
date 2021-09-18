@@ -212,49 +212,19 @@
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
           <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
-            <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+            <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3 ">
+              @foreach ($Packages as $package)
                 <div class="col">
-                    <div class="card h-100 shadow-sm img-card"> <img src="	https://safisurfclub.com/wp-content/uploads/2020/12/surf-safi-12.jpg?id=1163" class="card-img-top" alt="...">
-                        <div class="label-top shadow-sm">Pack 1</div>
+                    <div class="card h-140 shadow-sm img-card mb-5"> <img src="{{ asset($package->principalPhoto) }}" class="card-img-top"  alt="img">
+                        <div class="label-top shadow-sm">{{ $package->titre }}</div>
                         <div class="card-body">
-                            <div class="clearfix mb-3"> <span class="float-start badge ">12354.00€</span> </div>
-                            <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5>
+                            <div class="clearfix mb-3"> <span class="float-start badge ">{{ $package->price }}</span> </div>
+                            <p class="card-title">{!! $package->description !!}</p>
                             <div class="clearfix mb-1"> <span class="float-start"><i class="far fa-question-circle"></i></span> <span class="float-end"><i class="fas fa-plus"></i></span> </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100 shadow-sm"> <img src="./assets/img/surf-safi-14.jpg" class="card-img-top" alt="...">
-                      <div class="label-top shadow-sm">Pack 2</div>
-                      <div class="card-body">
-                          <div class="clearfix mb-3"> <span class="float-start badge ">12354.00€</span> </div>
-                          <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5>
-                          <div class="clearfix mb-1"> <span class="float-start"><i class="far fa-question-circle"></i></span> <span class="float-end"><i class="fas fa-plus"></i></span> </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col">
-                <div class="card h-100 shadow-sm"> <img src="	https://safisurfclub.com/wp-content/uploads/2020/12/surf-safi-13.jpg?id=1164" class="card-img-top" alt="...">
-                    <div class="label-top shadow-sm">Pack 3</div>
-                    <div class="card-body">
-                        <div class="clearfix mb-3"> <span class="float-start badge ">12354.00€</span> </div>
-                        <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5>
-                        <div class="clearfix mb-1"> <span class="float-start"><i class="far fa-question-circle"></i></span> <span class="float-end"><i class="fas fa-plus"></i></span> </div>
-                    </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100 shadow-sm"> <img src="https://safisurfclub.com/wp-content/uploads/2020/12/surf-safi-8.jpg?id=921" class="card-img-top" alt="...">
-                    <div class="label-top shadow-sm">Pack 4</div>
-                    <div class="card-body">
-                        <div class="clearfix mb-3"> <span class="float-start badge ">12354.00€</span> </div>
-                        <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5>
-                        <div class="clearfix mb-1"> <span class="float-start"><i class="far fa-question-circle"></i></span> <span class="float-end"><i class="fas fa-plus"></i></span> </div>
-                    </div>
-                </div>
-              </div>
-
-                
+                </div>   
+                @endforeach 
             </div>
         </div>
 
@@ -295,21 +265,21 @@
             </div>
             <div class="col-md-4 form-group">
               <select name="package_id" id="department" class="form-control">
-                <option value="">Select Department</option>
-                <option value="Department 1">Department 1</option>
-                <option value="Department 2">Department 2</option>
-                <option value="Department 3">Department 3</option>
+                <option value="">Select Package</option>
+                @foreach ($Packages as $package)
+                <option value="{{ $package->titre }}">{{ $package->titre }}</option>
+                @endforeach 
               </select>
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group">
-              <input type="number" name="Nperson" class="form-control " >
+              <input type="number" name="Nperson" placeholder="Number of person" class="form-control " >
               <div class="validate"></div>
             </div>
           </div>
 
           <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)" ></textarea>
+            <textarea class="form-control" name="message" rows="5">Message (Optional)</textarea>
             <div class="validate"></div>
           </div>
           <div class="mb-3">
@@ -626,70 +596,16 @@
 
       <div class="container-fluid">
         <div class="row no-gutters">
-
+          @foreach ($Gallery as $photo)
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-1.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/rmz.jpg" alt="" width="400px" height="300px">
+                <img src="{{ asset($photo->path) }}" alt="" width="400px" height="300px">
               </a>
             </div>
           </div>
+          @endforeach 
 
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/cap.jpg" alt="" width="400px" height="300px">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/ankr.jpg" alt="" width="400px" height="300px">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-4.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/bord.jpg" alt="" width="400px" height="300px">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-5.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/img1.jpg" alt="" width="400px" height="300px">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-6.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/sunset.jpg" alt="" width="400px" height="300px">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-7.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/rsvu.jpg" alt="" width="400px" height="300px">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-8.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/ex1.jpg" alt="" width="400px" height="300px">
-              </a>
-            </div>
-          </div>
 
         </div>
 
@@ -707,7 +623,7 @@
       </div>
 
       <div>
-        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3371.8490837076224!2d-9.252063784854842!3d32.31590798111379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac21115bd78fbb%3A0x465ca28f5b049b0a!2sRte%20de%20Safi%2C%20Safi!5e0!3m2!1sfr!2sma!4v1632003294003!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></iframe>
       </div>
 
       <div class="container">

@@ -11,7 +11,7 @@
                                 <h2><b>Packages</b> List</h2>
                             </div>
                             <div class="col-sm-6">
-                                <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Employee</span></a>
+                                <a href="#addPack" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New package</span></a>
                             </div>
                         </div>
                     </div>
@@ -34,11 +34,11 @@
                             <td>{{ $package->titre }}</td>
                             <td><img src="{{ asset($package->principalPhoto)  }}" alt="" height="60px"></td>
                             <td>{!! $package->description !!}</td>
-                            <td>{{ $package->price }} €/ Personne</td>
+                            <td>{{ $package->price }}</td>
                             <td>{{ $package->dayNumbers }}</td>
                             {{-- <td><img src="{{ asset($package->principalPhoto)  }}" alt="" height="60px"></td> --}}
                             <td>
-                                <a href="#editEmployeeModal"  class="edit"><i class="material-icons"  title="edit">edit</i></a>
+                                <a href="{{ url('/package/table/'.$package->id ) }}" class="edit"><i class="material-icons"  title="edit">edit</i></a>
                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                             </td>
                         </tr>
@@ -48,7 +48,8 @@
                                 <div class="modal-content">
                                     <form action="{{ url('delete/package/'.$package->id) }}" method="POST">
                                         {{ csrf_field() }}
-                                        {{ method_field('DELETE') }}                                         <div class="modal-header">						
+                                        {{ method_field('DELETE') }}                                        
+                                         <div class="modal-header">						
                                             <h4 class="modal-title">Delete package</h4>
                                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                         </div>
@@ -71,7 +72,7 @@
             </div>        
         </div>
         <!-- Edit Modal HTML -->
-        <div id="addEmployeeModal" class="modal fade">
+        <div id="addPack" class="modal fade">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <form action="{{ url('/package/add') }}" method="post" enctype="multipart/form-data" >

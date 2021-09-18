@@ -941,7 +941,7 @@ section {
 
 .card-img-top {
   width: 100%;
-  max-height: 177px;
+  max-height: 160px;
   object-fit: contain;
   padding: 0px;
 }
