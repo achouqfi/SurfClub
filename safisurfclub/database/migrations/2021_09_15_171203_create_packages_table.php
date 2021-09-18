@@ -18,8 +18,8 @@ class CreatePackagesTable extends Migration
             $table->string("titre");            
             $table->string("description");            
             $table->string("principalPhoto");            
-            $table->string("price");            
-            $table->string("dayNumbers");            
+            $table->string("price");
+            $table->string("dayNumbers");        
             $table->timestamps();
         });
     }

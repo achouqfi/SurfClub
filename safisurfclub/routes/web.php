@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     // return view('index');
+// });
 
 Auth::routes();
 
@@ -47,12 +47,13 @@ Route::delete('/reservation/annulation/{id}','App\Http\Controllers\ReservationCo
 //package route
 Route::post('/package/add','App\Http\Controllers\PackageController@store');
 Route::get('/package/table','App\Http\Controllers\PackageController@index');
+Route::get('/package/table/{id}','App\Http\Controllers\PackageController@edit');
 Route::get('/package','App\Http\Controllers\PackageController@store');
 Route::put('/update/package/{id}','App\Http\Controllers\PackageController@UserUpdate');
 Route::delete('/delete/package/{id}','App\Http\Controllers\PackageController@destroy');
 
 // feedBack route
 Route::post('/feedBack','App\Http\Controllers\FeedBackController@store');
-Route::get('/feedBack/create','App\Http\Controllers\FeedBackController@index');
+Route::get('/','App\Http\Controllers\FeedBackController@frontOffice');
 Route::get('/feedBack/table','App\Http\Controllers\FeedBackController@index');
 Route::delete('/delete/feedBack/{id}','App\Http\Controllers\FeedBackController@destroy');

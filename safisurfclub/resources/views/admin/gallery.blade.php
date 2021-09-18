@@ -24,7 +24,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($photos as $photo)
+                        @foreach ($photos as $photo)
                         <tr>
                             <td>{{ $photo->id }}</td>
                             <td><img src="{{ asset($photo->path)  }}" alt="" height="60px"></td>

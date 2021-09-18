@@ -11,20 +11,22 @@ class FeedBackController extends Controller
     {
         //
         $FeedBack= FeedBack::paginate(7);
-        return view('admin.FeedBack',["FeedBack"=>$FeedBack]);
+        return view('admin.FeedBack',["FeedBacks"=>$FeedBack]);
     }
 
     public function frontOffice()
     {
         //affichage des FeedBack dans la partie user&clien
-        $FeedBack= FeedBack::orderBy('id', 'DESC')->get();
-        return view('index',["FeedBack"=>$FeedBack]);
+        $FeedBack= FeedBack::get();
+        return view('index',["FeedBacks"=>$FeedBack]);
     }
+
     public function store(Request $request)
     {
         //insertion des FeedBack dans la DB
         $FeedBack = new FeedBack();
         $FeedBack -> name = $request -> name;
+        $FeedBack -> email = $request -> email;
         $FeedBack -> message = $request -> message;
 
         $FeedBack ->save();
@@ -35,7 +37,6 @@ class FeedBackController extends Controller
     {
         //suppression des FeedBack
         FeedBack::destroy($id);
-        return redirect("FeedBack")->with('dltFeedBack','Contact are deleted');
+        return redirect()->back()->with('dltFeedBack','Contact are deleted');
     }
-    
 }

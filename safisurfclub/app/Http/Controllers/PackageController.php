@@ -71,13 +71,13 @@ class PackageController extends Controller
 
         $Package ->save();
 
-        return redirect("Package")->with('editPackage','modification are saved');
+        return redirect()->back()->with('editPackage','modification are saved');
     }
 
     public function destroy($id)
     {
         //suppression des Packages
         Package::destroy($id);
-        return redirect("Package")->with('dltPackage','Package are deleted');
+        return redirect()->back()->with('dltPackage','Package are deleted');
     }
 }
