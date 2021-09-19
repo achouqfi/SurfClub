@@ -37,14 +37,12 @@
     <div class="container d-flex">
       <div class="contact-info mr-auto">
         <i class="icofont-envelope"></i> <a href="mailto:surfsafi@gmail.com">surfsafi@gmail.com</a>
-        <i class="icofont-phone"></i> <a href="https://wa.me/0636060655">0636060655</a> 
-        <i class="icofont-google-map"></i> Av. Mohamed Belkhadir, Safi Maroc 46000
+        <i class="icofont-phone"></i> <a href="https://wa.me/0671815570">0671815570</a> 
+        <i class="icofont-google-map"></i> Plage de Safi Maroc
       </div>
       <div class="social-links">
-        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
         <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
         <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
       </div>
     </div>
   </div>
@@ -59,7 +57,6 @@
           <li><a href="#about">About</a></li>
           <li><a href="#services">Packages</a></li>
           <li><a href="#departments">Other</a></li>
-          <li><a href="#doctors">Team</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -377,7 +374,7 @@
       </div>
     </section><!-- End Departments Section -->
 
-    <!-- ======= Team Section ======= -->
+    {{-- <!-- ======= Team Section ======= -->
     <section id="doctors" class="doctors">
       <div class="container">
 
@@ -455,7 +452,7 @@
         </div>
 
       </div>
-    </section><!-- End Doctors Section -->
+    </section><!-- End Doctors Section --> --}}
 
     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq section-bg">
