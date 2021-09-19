@@ -6,7 +6,7 @@
             <div class="col-md-3">
                 <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                     <div>
-                        <h3 class="fs-2">720</h3>
+                        <h3 class="fs-2">{{ $reservationsCount }}</h3>
                         <p class="fs-5">Reservation</p>
                     </div>
                     <i class="fas fa-swimmer fs-1 primary-text border rounded-full secondary-bg p-3"></i>
@@ -16,7 +16,7 @@
             <div class="col-md-3">
                 <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                     <div>
-                        <h3 class="fs-2">490</h3>
+                        <h3 class="fs-2">{{ $contactCount }}</h3>
                         <p class="fs-5">Message</p>
                     </div>
                     <i
@@ -27,7 +27,7 @@
             <div class="col-md-3">
                 <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                     <div>
-                        <h3 class="fs-2">99</h3>
+                        <h3 class="fs-2">{{ $NewsletterCount }}</h3>
                         <p class="fs-5">Newsletter</p>
                     </div>
                     <i class="fas fa-address-card fs-1 primary-text border rounded-full secondary-bg p-3"></i>
@@ -37,7 +37,7 @@
             <div class="col-md-3">
                 <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                     <div>
-                        <h3 class="fs-2">25</h3>
+                        <h3 class="fs-2">{{ $feedBackCount }}</h3>
                         <p class="fs-5">FeedBack</p>
                     </div>
                     <i class="fas fa-comment-dots fs-1 primary-text border rounded-full secondary-bg p-3"></i>
@@ -62,10 +62,11 @@
                     <table class="table table-striped table-hover">
                         <thead>
                             <tr>
+                                <th>ID</th>
                                 <th>Name</th>
                                 <th>Email</th>
-                                <th>date</th>
                                 <th>Phone</th>
+                                <th>Date</th>
                                 <th>Number of person</th>
                                 <th>Message</th>
                                 <th>Package</th>
@@ -73,58 +74,24 @@
                             </tr>
                         </thead>
                         <tbody>
+
+                            @foreach ($reservations as $reservation)
+
                             <tr>
-                                <td>Thomas Hardy</td>
-                                <td>thomashardy@mail.com</td>
-                                <td>89 Chiaroscuro Rd, Portland, USA</td>
-                                <td>(171) 555-2222</td>
-                                <td>23/22/2121</td>
-                                <td>Message</td>
-                                <td>pack</td>
+                                <td> {{ $reservation->id }}</td>
+                                <td> {{ $reservation->name}}</td>
+                                <td> {{ $reservation->email }}</td>
+                                <td> {{ $reservation->phone }}</td>
+                                <td> {{ $reservation->date }}</td>
+                                <td class="text-center"> {{ $reservation->Nperson }}</td>
+                                <td> {{ $reservation->message }}</td>
+                                <td> {{ $reservation->package_id }}</td>
                                 <td>
-                                    <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                                    <a href="mailto:{{ $reservation->email }}?subject=Réservation d'un cours de surf "  class="edit"><i class="material-icons"  title="mail">mail</i></a>
                                     <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>Thomas Hardy</td>
-                                <td>thomashardy@mail.com</td>
-                                <td>89 Chiaroscuro Rd, Portland, USA</td>
-                                <td>(171) 555-2222</td>
-                                <td>23/22/2121</td>
-                                <td>Message</td>
-                                <td>pack</td>
-                                <td>
-                                    <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                    <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Thomas Hardy</td>
-                                <td>thomashardy@mail.com</td>
-                                <td>89 Chiaroscuro Rd, Portland, USA</td>
-                                <td>(171) 555-2222</td>
-                                <td>23/22/2121</td>
-                                <td>Message</td>
-                                <td>pack</td>
-                                <td>
-                                    <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                    <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Thomas Hardy</td>
-                                <td>thomashardy@mail.com</td>
-                                <td>89 Chiaroscuro Rd, Portland, USA</td>
-                                <td>(171) 555-2222</td>
-                                <td>23/22/2121</td>
-                                <td>Message</td>
-                                <td>pack</td>
-                                <td>
-                                    <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Email">&#xE254;</i></a>
-                                    <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                                </td>
-                            </tr>					
+                            @endforeach					
                         </tbody>
                     </table>
                     {{-- <div class="clearfix">

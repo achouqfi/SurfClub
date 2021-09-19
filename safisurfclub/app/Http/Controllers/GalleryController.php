@@ -10,7 +10,7 @@ class GalleryController extends Controller
     public function index()
     {
         //
-        $Gallery= Gallery::paginate(5);
+        $Gallery= Gallery::get();
         return view('admin.Gallery',["photos"=>$Gallery]);
     }
 

@@ -11,7 +11,7 @@ class ContactController extends Controller
     public function index()
     {
         //
-        $Contact= Contact::paginate(6);
+        $Contact= Contact::get();
         return view('admin.message',["Contacts"=>$Contact]);
     }
 
@@ -25,7 +25,7 @@ class ContactController extends Controller
         $Contact -> message = $request -> message;
 
         $Contact ->save();
-        return redirect()->back()->with('Contact','Contact are inserted');
+        return redirect()->back();
     }
 
     public function destroy( $id)

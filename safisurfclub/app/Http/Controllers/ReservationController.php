@@ -34,8 +34,7 @@ class ReservationController extends Controller
         $Reservation -> package_id = $request -> package_id;
  
         $Reservation ->save();
-        return redirect()->back();
-// ->with('Reservation','Reservation are inserted')
+        return redirect("/");
     }
 
     public function edit($id)

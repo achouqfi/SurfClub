@@ -36,7 +36,7 @@
   <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
     <div class="container d-flex">
       <div class="contact-info mr-auto">
-        <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">	surfsafi@gmail.com</a>
+        <i class="icofont-envelope"></i> <a href="mailto:surfsafi@gmail.com">surfsafi@gmail.com</a>
         <i class="icofont-phone"></i> <a href="https://wa.me/0636060655">0636060655</a> 
         <i class="icofont-google-map"></i> Av. Mohamed Belkhadir, Safi Maroc 46000
       </div>
@@ -532,7 +532,7 @@
           @foreach ($FeedBacks as $feedBack)
           <div class="testimonial-wrap">
             <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+              {{-- <img src="assets/img/testimonials/user.png" class="testimonial-img" alt=""> --}}
               <h3>{{ $feedBack->name}}</h3>
               <h4>Surfer</h4>
               <p>

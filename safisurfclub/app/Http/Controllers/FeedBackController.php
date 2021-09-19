@@ -32,6 +32,8 @@ class FeedBackController extends Controller
         return view('index',["FeedBacks"=>$FeedBack,"Packages"=>$Package,"Gallery"=>$Gallery]);
     }
 
+    
+
     public function store(Request $request)
     {
         //insertion des FeedBack dans la DB
