@@ -7,19 +7,17 @@ use Illuminate\Http\Request;
 
 class GalleryController extends Controller
 {
+    
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function index()
     {
         //
-        $Gallery= Gallery::get();
+        $Gallery= Gallery::orderBy('id', 'DESC')->paginate(5);
         return view('admin.Gallery',["photos"=>$Gallery]);
-    }
-
-    public function frontOffice()
-    {
-        //affichage des FeedBack dans la partie user&clien
-        $Gallery= Gallery::orderBy('id', 'DESC')->get();
-        return view('index',["Gallery"=>$Gallery]);
-
     }
 
     public function store(Request $request)

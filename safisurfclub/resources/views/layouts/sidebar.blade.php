@@ -17,6 +17,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>           <!--CKEditor CDN -->
     <title>Dashboard</title>
+    <link href={{ URL::asset('assets/img/logo.png')}} rel="icon">
     <link rel="stylesheet" href="{{ URL::asset('assets/css/dashboard.css') }}">
 
 </head>
@@ -26,10 +27,10 @@
         <!-- Sidebar -->
         <div class="bg-white" id="sidebar-wrapper">
             <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
-                 <img src="./assets/img/logo.png" alt="" width="50px" > <h3>Safi Surf Club</h3>
+                 <img src={{ URL::asset('/assets/img/logo.png') }} alt="" width="50px" > <h3>Safi Surf Club</h3>
             </div>
             <div class="list-group list-group-flush my-3">
-                <a href="/home" class="list-group-item list-group-item-action bg-transparent second-text active"><i
+                {{-- <a href="/home" class="list-group-item list-group-item-action bg-transparent second-text active"><i
                         class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
                 <a href="/reservation/admin" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-swimmer me-2"></i>Reservation</a>
@@ -39,10 +40,15 @@
                         class="fas fa-address-card me-2"></i>Newsletter</a>
                 <a href="/package/table" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-archive me-2"></i>Package</a>
+                <a href="/event/table" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                    class="fas fa-archive me-2"></i>Event</a>
                 <a href="/gallery/table" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-photo-video me-2"></i>Gallery</a>
                 <a href="/feedBack/table" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-comment-dots me-2"></i>FeedBack</a>
+                        class="fas fa-comment-dots me-2"></i>FeedBack</a> --}}
+                @yield('SideBar')
+
+
             </div>
         </div>
         <!-- /#sidebar-wrapper -->

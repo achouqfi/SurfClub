@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class PackageController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function index()
     {
         //affichage des Packages dans la partie admin
@@ -14,13 +19,6 @@ class PackageController extends Controller
         return view('admin.pack',["Packages"=>$Package]);
     }
 
-    // public function frontOffice()
-    // {
-    //     //affichage des Packages dans la partie user&clien
-    //     $Package= Package::orderBy('id', 'DESC')->get();
-    //     return view('index',["Packages"=>$Package]);
-
-    // }
 
     public function store(Request $request)
     {

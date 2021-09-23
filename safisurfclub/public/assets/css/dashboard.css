@@ -25,7 +25,12 @@
   .rounded-full {
     border-radius: 100%;
   }
-  
+  .page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #325274 !important;
+    border-color: #007bff;}
+
   #wrapper {
     overflow-x: hidden;
     background: whitesmoke
@@ -174,8 +179,10 @@ table.table td a:hover {
 table.table td a.edit {
 	color: #FFC107;
 }
-table.table td a.delete {
+table.table td button.delete {
 	color: #F44336;
+	border: none;
+	background-color: none;
 }
 table.table td i {
 	font-size: 19px;

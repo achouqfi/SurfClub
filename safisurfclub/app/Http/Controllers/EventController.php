@@ -7,79 +7,55 @@ use Illuminate\Http\Request;
 
 class EventController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function index()
     {
         //
+        $Event= Event::orderBy('id', 'DESC')->paginate(7);
+        return view('admin.event',["Events"=>$Event]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        //
+        //insertion des Event dans la DB
+        $Event = new Event();
+        $Event -> title = $request -> title;
+        $Event -> description = $request -> description;
+        $Event -> date = $request -> date;
+
+        $Event ->save();
+        return redirect()->back();
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Event  $event
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Event $event)
+
+    public function edit($id)
     {
-        //
+        //modification les Package
+        $Event = Event::find($id);
+        return view('admin.EditEvent',["Event"=>$Event]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Event  $event
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Event $event)
+    public function update(Request $request,$id)
     {
-        //
+        //insertion des Event dans la DB
+        $Event = Event::find($id);
+        $Event -> title = $request -> title;
+        $Event -> description = $request -> description;
+        $Event -> date = $request -> date;
+
+        $Event ->save();
+        return redirect('event/table');
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Event  $event
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Event $event)
+    public function destroy($id)
     {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Event  $event
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Event $event)
-    {
-        //
+        //suppression des Event
+        Event::destroy($id);
+        return redirect()->back()->with('dltEvent','Contact are deleted');
     }
 }

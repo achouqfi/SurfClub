@@ -60,10 +60,23 @@
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="flag-icon flag-icon-{{Config::get('languages')[App::getLocale()]['flag-icon']}}"></span> {{ Config::get('languages')[App::getLocale()]['display'] }}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              @foreach (Config::get('languages') as $lang => $language)
+                  @if ($lang != App::getLocale())
+                          <a class="dropdown-item" href="{{ route('lang.switch', $lang) }}"><span class="flag-icon flag-icon-{{$language['flag-icon']}}"></span> {{$language['display']}}</a>
+                  @endif
+              @endforeach
+            </div>
+          </li>
         </ul>
       </nav><!-- .nav-menu -->
 
       <a href="#appointment" class="appointment-btn scrollto">Book now</a>
+
 
     </div>
   </header><!-- End Header -->
@@ -170,7 +183,6 @@
       <div class="container">
 
         <div class="row">
-
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
               <img src="./assets/img/gotchaLogo.jpg" alt="" width="100px" >
@@ -194,7 +206,6 @@
               <img src="./assets/img/gotchaLogo.jpg" alt="" width="100px" >
             </div>
           </div>
-
         </div>
 
       </div>
@@ -374,85 +385,19 @@
       </div>
     </section><!-- End Departments Section -->
 
-    {{-- <!-- ======= Team Section ======= -->
+    <!-- ======= Team Section ======= -->
     <section id="doctors" class="doctors">
       <div class="container">
 
         <div class="section-title">
-          <h2>Team</h2>
+          <h2>Event</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut expedita excepturi dolorem, aspernatur nesciunt totam consequuntur eaque quaerat atque optio, minus, dolores vero soluta quam vel nisi fugiat. Illum, alias!</p>
         </div>
 
-        <div class="row">
-
-          <div class="col-lg-6">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team1.jpg" height="130px" width="142px" alt=""></div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Coach</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4 mt-lg-0">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team1.jpg" height="130px" width="142px" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Coach</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team1.jpg" height="130px" width="142px" alt=""></div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>Coach</span>
-                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team1.jpg" height="130px" width="142px" alt=""></div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Coach</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
+        
 
       </div>
-    </section><!-- End Doctors Section --> --}}
+    </section><!-- End Doctors Section -->
 
     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq section-bg">

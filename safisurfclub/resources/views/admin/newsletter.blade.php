@@ -1,5 +1,24 @@
 @extends('layouts.sidebar')
 
+@section('SideBar')
+    <a href="/home" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+            class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
+    <a href="/reservation/admin" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+            class="fas fa-swimmer me-2"></i>Reservation</a>
+    <a href="/contact/admin" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+            class="fas fa-envelope me-2"></i>Message</a>
+    <a href="/newsletter/admin" class="list-group-item list-group-item-action bg-transparent second-text active"><i
+            class="fas fa-address-card me-2"></i>Newsletter</a>
+    <a href="/package/table" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+            class="fas fa-archive me-2"></i>Package</a>
+    <a href="/event/table" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+        class="fas fa-archive me-2"></i>Event</a>
+    <a href="/gallery/table" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+            class="fas fa-photo-video me-2"></i>Gallery</a>
+    <a href="/feedBack/table" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+            class="fas fa-comment-dots me-2"></i>FeedBack</a>
+@endsection
+
 @section('content')
     <div class="container-fluid px-4">
         <div class="container-xxl">
@@ -25,37 +44,18 @@
                             <tr>
                                 <td> {{ $newsleter->id }}</td>
                                 <td> {{ $newsleter->email }}</td>
-                                <td>
-                                    <a href="mailto:{{ $newsleter->email }}"  class="edit"><i class="material-icons"  title="mail">mail</i></a>
-                                    <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                                <td class="d-flex">
+                                    <a href="mailto:{{ $newsleter->email }}"  class="edit mt-1"><i class="material-icons"  title="mail">mail</i></a>
+                                    <form action="{{ url('newsleter/annulation/'.$newsleter->id) }}" method="POST">
+                                        {{ csrf_field() }}
+                                        {{ method_field('DELETE') }}  
+                                        <button href="" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></button>
+                                    </form>                                
                                 </td>
                             </tr>
-                            
-                             <!-- Delete Modal HTML -->
-                            <div id="deleteEmployeeModal" class="modal fade">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <form action="{{ url('newsleter/annulation/'.$newsleter->id) }}" method="POST">
-                                            {{ csrf_field() }}
-                                            {{ method_field('DELETE') }} 
-                                            <div class="modal-header">						
-                                                <h4 class="modal-title">Delete email</h4>
-                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                            </div>
-                                            <div class="modal-body">					
-                                                <p>Are you sure you want to delete these email?</p>
-                                                <p class="text-warning"><small>This action cannot be undone.</small></p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                                                <input type="submit" class="btn btn-danger" value="Delete">
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
                             @endforeach
                         </tbody>
+                        <span>{{ $Newsletters->links("pagination::bootstrap-4") }}</span>
                     </table>
             </div>        
         </div>

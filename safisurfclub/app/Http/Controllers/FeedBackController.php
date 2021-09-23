@@ -9,6 +9,9 @@ use Illuminate\Http\Request;
 
 class FeedBackController extends Controller
 {
+    
+
+
     public function index()
     {
         //
@@ -16,21 +19,7 @@ class FeedBackController extends Controller
         return view('admin.FeedBack',["FeedBacks"=>$FeedBack]);
     }
 
-
-
-    public function frontOffice()
-    {
-        //affichage des Packages dans la partie user&clien
-        $Package= Package::orderBy('id', 'DESC')->get();
-
-        $Gallery= Gallery::orderBy('id', 'DESC')->get();
-        // return view('index',["Gallery"=>$Gallery]);
-
-        //affichage des FeedBack dans la partie user&clien
-        $FeedBack= FeedBack::get();
-
-        return view('index',["FeedBacks"=>$FeedBack,"Packages"=>$Package,"Gallery"=>$Gallery]);
-    }
+ 
 
     
 
