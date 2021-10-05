@@ -771,6 +771,7 @@ section {
   background: url("../img/img-8.jpg") center center no-repeat;
   background-size: cover;
   min-height: 500px;
+  width: ;
 }
 
 .about .play-btn {

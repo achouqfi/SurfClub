@@ -19,7 +19,6 @@ class FeedBackController extends Controller
         return view('admin.FeedBack',["FeedBacks"=>$FeedBack]);
     }
 
- 
 
     
 

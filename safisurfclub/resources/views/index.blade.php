@@ -60,7 +60,7 @@
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li class="nav-item dropdown">
+          {{-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span class="flag-icon flag-icon-{{Config::get('languages')[App::getLocale()]['flag-icon']}}"></span> {{ Config::get('languages')[App::getLocale()]['display'] }}
             </a>
@@ -71,11 +71,11 @@
                   @endif
               @endforeach
             </div>
-          </li>
+          </li> --}}
         </ul>
       </nav><!-- .nav-menu -->
 
-      <a href="#appointment" class="appointment-btn scrollto">Book now</a>
+      <a href="#appointment" class="appointment-btn scrollto">Reserve maintenant</a>
 
 
     </div>
@@ -84,10 +84,9 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container">
-      <h1>Welcome to Safi surf Club</h1>
-      <h2>We are a team of talented surfers to coach you
-      </h2> 
-      <a href="#about" class="btn-get-started scrollto">See more</a>
+      <h1>Bienvenue au Safi surf Club</h1>
+      <h2>Cours et Stages de Surf à Safi</h2> 
+      <a href="#about" class="btn-get-started scrollto">Voir plus</a>
     </div>
   </section><!-- End Hero -->
 
@@ -100,7 +99,7 @@
         <div class="row">
           <div class="col-lg-4 d-flex align-items-stretch">
             <div class="content">
-              <h3>Why Choose Safi surf club?</h3>
+              <h3>Pourquoi choisir Safi surf club?</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
                 Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
@@ -152,14 +151,25 @@
 
         <div class="row">
           <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch">
+          </iframe>  
           </div>
 
           <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
             <h3>About Safi surf club</h3>
-            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.
+            <p>Les beaux jours arrivent, les conditions de surf hivernales, laissent désormais la place à de belles journées de vagues à la portée de toutes et de tous ! <br>
+
+              Nous sommes heureux de vous accueillir pour venir profiter des bienfaits de l’océan et de ses vagues, dans le respect  des règles sanitaires. <br> <br>
+              
+              Si vous avez une question ou une interrogation, on est là pour vous au 05 56 26 38 84 ou via notre formulaire de contact. <br>  <br>
+              
+              #lesurfalacanau #jamaiscommeailleurs #tousensemble <br> <br>
+              
+              Aloha 🌈 <br> <br>
+              
+              L’équipe du Safi Surf Club
             </p>
 
-            <div class="icon-box">
+            {{-- <div class="icon-box">
               <div class="icon"><i class="bx bx-fingerprint"></i></div>
               <h4 class="title"><a href="">Lorem Ipsum</a></h4>
               <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti expedita nulla rem velit, dicta illum debitis</p>
@@ -169,8 +179,7 @@
               <div class="icon"><i class="bx bx-gift"></i></div>
               <h4 class="title"><a href="">Competition</a></h4>
               <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti expedita nulla rem velit, dicta illum debitis</p>
-            </div>
-
+            </div> --}}
 
           </div>
         </div>
