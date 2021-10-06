@@ -45,8 +45,15 @@
                                 <textarea type="text" class="form-control"  name="description" required>{{ $Event->description }} </textarea>
                             </div>
                             <div class="form-group">
+                                <label>Main photo</label>
+                                <div class="d-flex">
+                                    <img src="{{ asset($Event->path)  }}" alt="" height="40px">
+                                    <input type="file" class="form-control" value="{{ $Event->path }}" name="path" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <label>Date</label>
-                                <input type="date" class="form-control" value="{{ $Event->date }}" name="date" required>
+                                <input type="date" class="form-control" value="{{ $Event->date }}"  id="datePickerId" name="date" required>
                             </div>
                         </div>
 
@@ -56,10 +63,15 @@
                         </div>
                     </form>
                 </div>
-                <span>{{ $Event->links( "pagination::bootstrap-4") }}</span>
             </div>        
         </div>
         
     </div>
+
+    @section('scriptText')
+        <script>
+            datePickerId.min = new Date().toISOString().split("T")[0];
+        </script>
+    @endsection
 
 @endsection

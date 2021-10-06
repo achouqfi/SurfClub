@@ -151,35 +151,22 @@
 
         <div class="row">
           <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch">
-          </iframe>  
           </div>
 
           <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-            <h3>About Safi surf club</h3>
+            <h3>A propos Safi surf club</h3>
             <p>Les beaux jours arrivent, les conditions de surf hivernales, laissent désormais la place à de belles journées de vagues à la portée de toutes et de tous ! <br>
 
               Nous sommes heureux de vous accueillir pour venir profiter des bienfaits de l’océan et de ses vagues, dans le respect  des règles sanitaires. <br> <br>
               
               Si vous avez une question ou une interrogation, on est là pour vous au 05 56 26 38 84 ou via notre formulaire de contact. <br>  <br>
               
-              #lesurfalacanau #jamaiscommeailleurs #tousensemble <br> <br>
+              #lesurfaSafi #RassLafaa #tousensemble <br> <br>
               
               Aloha 🌈 <br> <br>
               
               L’équipe du Safi Surf Club
             </p>
-
-            {{-- <div class="icon-box">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti expedita nulla rem velit, dicta illum debitis</p>
-            </div>
-
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Competition</a></h4>
-              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti expedita nulla rem velit, dicta illum debitis</p>
-            </div> --}}
 
           </div>
         </div>
@@ -194,7 +181,7 @@
         <div class="row">
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
-              <img src="./assets/img/gotchaLogo.jpg" alt="" width="100px" >
+              <img src="./assets/img/logo FRMSurf_2.png" alt="" width="180px" >
             </div>
           </div>
 
@@ -243,7 +230,7 @@
                 </div>   
                 @endforeach 
             </div>
-        </div>
+          </div>
 
         </div>
 
@@ -259,19 +246,19 @@
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum autem magnam similique tempora esse, dignissimos dolores officiis dolorem et cupiditate temporibus inventore repellat. Obcaecati suscipit quis quisquam repudiandae repellat nobis.</p>
         </div>
 
-        <form action="{{ url('reservation') }}" method="POST" enctype="multipart/form-data" role="form" class="php-email-form">
+        <form action="{{ url('reservation') }}" method="POST" enctype="multipart/form-data" role="form" class="formInsert">
           @csrf
           <div class="form-row">
             <div class="col-md-4 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required>
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
               <div class="validate"></div>
             </div>
           </div>
@@ -282,21 +269,21 @@
             </div>
             <div class="col-md-4 form-group">
               <select name="package_id" id="department" class="form-control">
-                <option value="">Select Package</option>
-                @foreach ($Packages as $package)
-                <option value="{{ $package->titre }}">{{ $package->titre }}</option>
-                @endforeach 
+                <option value="" required>Select Package</option>
+                    @foreach ($Packages as $package)
+                      <option value="{{ $package->titre }}">{{ $package->titre }}</option>
+                    @endforeach 
               </select>
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group">
-              <input type="number" name="Nperson" placeholder="Number of person" class="form-control " >
+              <input type="number" name="Nperson" placeholder="Number of person" class="form-control "  required>
               <div class="validate"></div>
             </div>
           </div>
 
           <div class="form-group">
-            <textarea class="form-control" name="message" rows="5">Message (Optional)</textarea>
+            <textarea class="form-control" name="message" rows="5" required>Message (Optional)</textarea>
             <div class="validate"></div>
           </div>
           <div class="mb-3">
@@ -315,7 +302,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Another Services</h2>
+          <h2>Des autres service</h2>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae animi, nesciunt fugiat sint possimus deserunt! Culpa magnam quos voluptas facere, neque unde eos totam asperiores iure dolores cum officiis voluptatibus!</p>
         </div>
 
@@ -323,16 +310,16 @@
           <div class="col-lg-3">
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item">
-                <a class="nav-link active show" data-toggle="tab" href="#tab-1">SurfShop</a>
+                <a class="nav-link active show" data-toggle="tab" href="#tab-1">Location du materiel de Surf</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-2">Reataurant</a>
+                <a class="nav-link" data-toggle="tab" href="#tab-2">Ecole de Surf</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-3">Yoga</a>
+                <a class="nav-link" data-toggle="tab" href="#tab-3">Café</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-5">View</a>
+                <a class="nav-link" data-toggle="tab" href="#tab-5">Entraînement</a>
               </li>
             </ul>
           </div>
@@ -342,7 +329,7 @@
               <div class="tab-pane active show" id="tab-1">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Surf Shop</h3>
+                    <h3>Location du materiel de Surf</h3>
                     <p class="font-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
                     <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
                   </div>
@@ -354,7 +341,7 @@
               <div class="tab-pane" id="tab-2">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Beach restaurant</h3>
+                    <h3>Ecole de Surf</h3>
                     <p class="font-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
                     <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
                   </div>
@@ -366,7 +353,7 @@
               <div class="tab-pane" id="tab-3">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Yoga session</h3>
+                    <h3>Café</h3>
                     <p class="font-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
                     <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
                   </div>
@@ -378,7 +365,7 @@
               <div class="tab-pane" id="tab-5">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>View</h3>
+                    <h3>Entraînement</h3>
                     <p class="font-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
                     <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
                   </div>
@@ -395,20 +382,36 @@
     </section><!-- End Departments Section -->
 
     <!-- ======= Team Section ======= -->
-    <section id="doctors" class="doctors">
-      <div class="container">
+    <section id="faq" class="faq section-bg">
+   <div class="container">
 
         <div class="section-title">
           <h2>Event</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut expedita excepturi dolorem, aspernatur nesciunt totam consequuntur eaque quaerat atque optio, minus, dolores vero soluta quam vel nisi fugiat. Illum, alias!</p>
         </div>
 
+        <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
+          <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3 ">
+            @foreach ($Events as $Event)
+              <div class="col">
+                  <div class="card h-140 shadow-sm img-card mb-5"> <img src="{{ asset($Event->path) }}" class="card-img-top"  alt="img">
+                      <div class="label-top shadow-sm">{{ $Event->title}}</div>
+                      <div class="card-body">
+                          <div class="clearfix mb-3"> <span class="float-start badge ">{{ $Event->date}}</span> </div>
+                          <p class="card-title">{{ $Event->description}}</p>
+                          <a href="mailto:surfsafi@gmail.com" class="my-card-btn">Plus d'information</a>
+                        </div>
+                  </div>
+              </div>   
+              @endforeach 
+          </div>
+        </div>
+ 
         
-
       </div>
     </section><!-- End Doctors Section -->
 
-    <!-- ======= Frequently Asked Questions Section ======= -->
+    {{-- <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq section-bg">
       <div class="container">
 
@@ -468,7 +471,7 @@
         </div>
 
       </div>
-    </section><!-- End Frequently Asked Questions Section -->
+    </section><!-- End Frequently Asked Questions Section --> --}}
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
@@ -483,7 +486,6 @@
           @foreach ($FeedBacks as $feedBack)
           <div class="testimonial-wrap">
             <div class="testimonial-item">
-              {{-- <img src="assets/img/testimonials/user.png" class="testimonial-img" alt=""> --}}
               <h3>{{ $feedBack->name}}</h3>
               <h4>Surfer</h4>
               <p>
@@ -508,26 +510,26 @@
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum autem magnam similique tempora esse, dignissimos dolores officiis dolorem et cupiditate temporibus inventore repellat. Obcaecati suscipit quis quisquam repudiandae repellat nobis.</p>
         </div>
 
-        <form action="{{ url('feedBack') }}" method="POST" enctype="multipart/form-data" role="form" class="php-email-form">
+        <form action="{{ url('feedBack') }}" method="POST"  class="formInsert">
           @csrf
           <div class="form-row">
             <div class="col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
               <div class="validate"></div>
             </div>
             <div class="col-md-6 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
               <div class="validate"></div>
             </div>
           </div>
           <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" ></textarea>
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
             <div class="validate"></div>
           </div>
           <div class="mb-3">
             <div class="loading">Loading</div>
             <div class="error-message"></div>
-            <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+            <div class="sent-message">Your message request has been sent successfully. Thank you!</div>
           </div>
           <div class="text-center"><button type="submit">Add Now</button></div>
         </form>
@@ -606,25 +608,25 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="{{ url('contact') }}" method="post" role="form" class="php-email-form" enctype="multipart/form-data">
+            <form action="{{ url('contact') }}" method="post" role="form" class="formInsert" enctype="multipart/form-data">
               @csrf
 
               <div class="form-row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/>
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required/>
                   <div class="validate"></div>
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required/>
                 <div class="validate"></div>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" required></textarea>
                 <div class="validate"></div>
               </div>
               <div class="mb-3">

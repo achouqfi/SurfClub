@@ -31,7 +31,7 @@ class FeedBackController extends Controller
         $FeedBack -> message = $request -> message;
 
         $FeedBack ->save();
-        return redirect()->back()->with('FeedBack','FeedBack are inserted');
+        return redirect()->back();
     }
 
     public function destroy($id)

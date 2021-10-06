@@ -28,6 +28,14 @@ class EventController extends Controller
         $Event -> description = $request -> description;
         $Event -> date = $request -> date;
 
+        //insertion de la photo
+        $file = $request->path;
+        $ext = $file->getClientOriginalExtension();
+        $filename = time() . ".".$ext;
+        $filepath ="storage/public/";
+        $file->move($filepath,$filename);
+        $Event->path = $filepath.$filename;
+
         $Event ->save();
         return redirect()->back();
     }
@@ -47,6 +55,14 @@ class EventController extends Controller
         $Event -> title = $request -> title;
         $Event -> description = $request -> description;
         $Event -> date = $request -> date;
+
+        //update de la photo
+        $file = $request->path;
+        $ext = $file->getClientOriginalExtension();
+        $filename = time() . ".".$ext;
+        $filepath ="storage/public/";
+        $file->move($filepath,$filename);
+        $Event->path = $filepath.$filename;
 
         $Event ->save();
         return redirect('event/table');

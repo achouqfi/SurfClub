@@ -39,6 +39,7 @@
                             <tr>
                                 <th>ID</th>
                                 <th>title</th>
+                                <th>photo</th>
                                 <th>description</th>
                                 <th>date</th>
                                 <th>Actions</th>
@@ -49,11 +50,17 @@
                             <tr>
                                 <td> {{ $Event->id }}</td>
                                 <td> {{ $Event->title}}</td>
+                                <td><img src="{{ asset($Event->path)  }}" alt="" height="30px"></td>
                                 <td> {{ $Event->description }}</td>
                                 <td> {{ $Event->date }}</td>
-                                <td>
-                                    <a href="{{ url('/event/table/'.$Event->id ) }}"  class="edit"><i class="material-icons"  title="edit">edit</i></a>
-                                    <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                                <td class="d-flex">
+                                    <a href="{{ url('/event/table/'.$Event->id ) }}"  class="edit mt-1"><i class="material-icons"  title="edit">edit</i></a>
+                                    {{-- <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a> --}}
+                                    <form action="{{ url('event/annulation/'.$Event->id) }}" method="POST">
+                                        {{ csrf_field() }}
+                                        {{ method_field('DELETE') }}
+                                        <button class="delete" data-toggle="modal"><i class="material-icons mt-1" data-toggle="tooltip" title="Delete">&#xE872;</i></button>
+                                    </form>
                                 </td>
                             </tr>
                             @endforeach
@@ -68,7 +75,7 @@
         <div id="addEmployeeModal" class="modal fade">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <form action="{{ url('/event/create') }}" method="post">
+                    <form action="{{ url('/event/create') }}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="modal-header">						
                             <h4 class="modal-title">Add event</h4>
@@ -78,6 +85,10 @@
                             <div class="form-group">
                                 <label>Title</label>
                                 <input type="text" class="form-control" name="title" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Photo</label>
+                                <input type="file" class="form-control" name="path" required>
                             </div>
                             <div class="form-group">
                                 <label>Description</label>
@@ -101,9 +112,9 @@
 
     @section('scriptText')
 	
-	<script>
-        datePickerId.min = new Date().toISOString().split("T")[0];
-	</script>
+        <script>
+            datePickerId.min = new Date().toISOString().split("T")[0];
+        </script>
 
-@endsection
+    @endsection
 @endsection
