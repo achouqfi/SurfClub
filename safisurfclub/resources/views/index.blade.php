@@ -41,8 +41,8 @@
         <i class="icofont-google-map"></i> Plage de Safi Maroc 
       </div>
       <div class="social-links">
-        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="https://www.instagram.com/safisurfclub/" class="instagram"><i class="icofont-instagram"></i></a>
       </div>
     </div>
   </div>
@@ -85,7 +85,7 @@
   <section id="hero" class="d-flex align-items-center">
     <div class="container">
       <h1>Bienvenue au Safi surf Club</h1>
-      <h2>Cours et Stages de Surf à Safi</h2> 
+      <h2>Une pure joie de Surfer à Safi</h2> 
       <a href="#about" class="btn-get-started scrollto">Voir plus</a>
     </div>
   </section><!-- End Hero -->
@@ -99,10 +99,11 @@
         <div class="row">
           <div class="col-lg-4 d-flex align-items-stretch">
             <div class="content">
-              <h3>Pourquoi choisir Safi surf club?</h3>
+              <h3>Safi surf club?</h3>
               <p>
-                Safi Surf Club vous accueille pour vous faire découvrir leur passion, le surf. Différentes formules selon votre niveau, que vous soyez seul, en duo ou en groupe. Découvrez les activités nautiques de Safi et la culture locale.
-              </p>
+                Safi Surf Club vous accueille toute l’année dans un lieu de vie chaleureux sur la plage de Safi, 
+                un vrai Club Sportif et Éducatif où l’on se retrouve pour partager les vraies valeurs du Surf et la joie des plaisirs de la mer… 
+                 </p>
             </div>
           </div>
           <div class="col-lg-8 d-flex align-items-stretch">
@@ -112,18 +113,19 @@
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="icofont-beach-bed "></i>
                     <h4 class="mt-3">                    
-                      Le meilleur spot de surf au Maroc
+                      Nos Cours & Stages 
                     </h4>
-                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                    <p>Notre variété de formules vous permet de surfer au mieux à la plage de Safi, en fonction de vos impératifs et de découvrir le surf à votre rythme.</p>
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="icofont-team"></i>
                     <h4 class="mt-3">
-                      Coachs professionnels
+                      NOS OBJECTIFS
                     </h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    <p> Notre école de surf  vous accueille pour découvrir ou perfectionner votre niveau de Surf, Body-Board et Stand Up Paddle-board
+                      </p>
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
@@ -131,9 +133,9 @@
                     <i class="icofont-sun-rise"></i>
                   </i>
                     <h4 class="mt-3">
-                      Vue sur la plage
+                      NOS ACTIVITÉS
                     </h4>
-                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                    <p>Safi Surf Club vous propose des cours de Surf sur la plage de Safi mondialement réputée pour la qualité de ses vagues .</p>
                   </div>
                 </div>
               </div>
@@ -153,17 +155,13 @@
           </div>
 
           <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-            <h3>À propos    Safi surf club</h3>
-            <p>Les beaux jours arrivent, les conditions de surf hivernales, laissent désormais la place à de belles journées de vagues à la portée de toutes et de tous ! <br>
+            <h3>À propos Safi surf club</h3>
+            <p>
+              Notre équipe vous propose les Cours et stages de surf pour tous âges et en groupe de niveaux. surfez au meilleurs moment de la journée avec notre équipe de moniteurs passionnés
+              Notre variété de formules vous permet de surfer au mieux à la plage de Safi, en fonction de vos impératifs et de découvrir le surf à votre rythme. <br> <br>
 
-              Nous sommes heureux de vous accueillir pour venir profiter des bienfaits de l’océan et de ses vagues, dans le respect  des règles sanitaires. <br> <br>
-              
-              Si vous avez une question ou une interrogation, on est là pour vous au 06 71 81 55 70 ou via notre formulaire de contact. <br>  <br>
-              
-              #lesurfaSafi #RassLafaa #tousensemble <br> <br>
-              
-              Aloha 🌈 <br> <br>
-              
+              NOUS PROPOSONS DES COURS COLLECTIFS OU PARICULIERS, POUR DÉBUTANTS OU CONFIRMÉS, POUR ENFANTS OU ADULTES, EN GROUPE OU CADRES ET EMPLOYÉS D’ENTREPRISE… <br> <br>
+
               L’équipe du Safi Surf Club
             </p>
 
@@ -212,7 +210,7 @@
 
         <div class="section-title">
           <h2>Packages</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Safi Surf Club vous propose des cours de Surf sur la plage de Safi mondialement réputée pour la qualité de ses vagues. </p>
         </div>
           <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
             <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3 ">
@@ -242,7 +240,7 @@
 
         <div class="section-title">
           <h2>Réservez votre session de surf</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum autem magnam similique tempora esse, dignissimos dolores officiis dolorem et cupiditate temporibus inventore repellat. Obcaecati suscipit quis quisquam repudiandae repellat nobis.</p>
+          <p>Réservez maintenant votre créneau surf sur Safi. Précisez le jour dans les commentaires, nous vous rappellerons pour vous confirmer la réservation et pour vous donner un horaire précis. </p>
         </div>
 
         <form action="{{ url('reservation') }}" method="POST" enctype="multipart/form-data" role="form" class="formInsert">
@@ -317,7 +315,7 @@
                 <a class="nav-link" data-toggle="tab" href="#tab-3">Café</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-5">Entraînement</a>
+                <a class="nav-link" data-toggle="tab" href="#tab-5">Yoga & Fitness</a>
               </li>
             </ul>
           </div>
@@ -332,7 +330,7 @@
                     <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/shop.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/shop.jpeg" alt=""  class="img-fluid mt-5">
                   </div>
                 </div>
               </div>
@@ -344,7 +342,7 @@
                     <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/lezat-beach-restaurants.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/couverture.jpeg" alt="" class="img-fluid mt-5">
                   </div>
                 </div>
               </div>
@@ -356,19 +354,19 @@
                     <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/yoga.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/coffe.jpeg" alt="" class="img-fluid mt-5">
                   </div>
                 </div>
               </div>
               <div class="tab-pane" id="tab-5">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Entraînement</h3>
+                    <h3>Yoga & Fitness</h3>
                     <p class="font-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
                     <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/sunset.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/yoga.jpg" alt="" class="img-fluid mt-3">
                   </div>
                 </div>
               </div>
@@ -494,11 +492,9 @@
             </div>
           </div>
           @endforeach 
-
-
         </div>
-
       </div>
+
     </section><!-- End Gallery Section -->
 
     <!-- ======= Contact Section ======= -->
@@ -592,6 +588,9 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3>Safi surf Club</h3>
             <p>
+              Pour un abonnement annuel ou mensuel, il faut remplir fiche d’inscription disponible au Club, 
+              Accompagnée d’une autorisation parentale pour les mineurs, et un certificat médical pour l’aptitude des sport nautiques… <br>
+
               Plage de Safi Maroc <br>
               <strong>Téléphone:</strong>0671815570<br>
               <strong>Email:</strong>surfsafi@gmail.com<br>

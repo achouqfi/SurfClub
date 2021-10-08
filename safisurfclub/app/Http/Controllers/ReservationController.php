@@ -37,7 +37,7 @@ class ReservationController extends Controller
  
         $Reservation ->save();
 
-        $to_email ="a.chouqfi@gmail.com";
+        $to_email ="surfsafi@gmail.com";
 
         $title="reservation sur safi surf club";
         $message="vous avez un nouveau reservation sur safi surf club:". $Reservation;

@@ -28,7 +28,7 @@ class ContactController extends Controller
         $Contact -> message = $request -> message;
         $Contact ->save();
 
-        $to_email ="a.chouqfi@gmail.com";
+        $to_email ="surfsafi@gmail.com";
 
         $title="Message safi surf club";
         $message="vous avez un nouveau message sur safi surf club:". $Contact;
