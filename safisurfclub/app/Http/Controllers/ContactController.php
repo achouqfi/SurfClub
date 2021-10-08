@@ -10,10 +10,7 @@ use Mail;
 class ContactController extends Controller
 {
     
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+
 
     public function index()
     {
@@ -31,30 +28,16 @@ class ContactController extends Controller
         $Contact -> message = $request -> message;
         $Contact ->save();
 
-        $to_name ="Admin";
-        $to_email ="ayoubchouqfi015@gmail.com";
+        $to_email ="a.chouqfi@gmail.com";
 
-        // $name=$agent->name." ".$agent->prenom;
-        // $mail=$agent->email;
-
-        $title="contact notif";
-        $message="you have a new notif";
-        $cc="";
+        $title="Message safi surf club";
+        $message="vous avez un nouveau message sur safi surf club:". $Contact;
+        // $cc="";
         $data = array("body"=>$message);
 
-        // Mail::send('mail.client', $data, function($message) use ($to_name, $to_email,$title,$cc) {
-        // $message->to($to_email, $to_name)
-        //         ->cc($cc)
-        //         ->subject($title);
-        // $message->from('a.chouqfi@gmail.com','ayoub');
-        //     });
         Mail::send('mail', $data, function($message) use ($to_email, $title) {
             $message->to($to_email)->subject($title);
         });
-
-        // dd("ddd");
-        
-        //insertion des Contact dans la DB
 
         return redirect()->back();
     }

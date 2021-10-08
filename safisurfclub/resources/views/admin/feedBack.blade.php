@@ -1,3 +1,6 @@
+@auth
+@if (Auth::user())
+
 @extends('layouts.sidebar')
 
 @section('SideBar')
@@ -65,3 +68,5 @@
         </div>
 
 @endsection
+@endif
+@endauth

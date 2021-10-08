@@ -65,4 +65,6 @@ Route::get('/feedBack/table','App\Http\Controllers\FeedBackController@index');
 Route::delete('/delete/feedBack/{id}','App\Http\Controllers\FeedBackController@destroy');
 // Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Auth::routes();
+

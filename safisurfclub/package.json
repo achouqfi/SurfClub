@@ -22,7 +22,7 @@
         "sass-loader": "^11.0.1",
         "vue": "^2.6.12",
         "vue-loader": "^16.7.0",
-        "vue-template-compiler": "^2.6.14"
+        "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
         "flag-icon-css": "^3.5.0"

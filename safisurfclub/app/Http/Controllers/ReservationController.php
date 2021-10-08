@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Reservation;
 use Illuminate\Http\Request;
+use Mail;
+
 
 class ReservationController extends Controller
 {
@@ -34,6 +36,18 @@ class ReservationController extends Controller
         $Reservation -> package_id = $request -> package_id;
  
         $Reservation ->save();
+
+        $to_email ="a.chouqfi@gmail.com";
+
+        $title="reservation sur safi surf club";
+        $message="vous avez un nouveau reservation sur safi surf club:". $Reservation;
+        // $cc="";
+        $data = array("body"=>$message);
+
+        Mail::send('mail', $data, function($message) use ($to_email, $title) {
+            $message->to($to_email)->subject($title);
+        });
+
         return redirect("/");
     }
 
@@ -55,7 +69,6 @@ class ReservationController extends Controller
         $Reservation -> Nperson = $request -> Nperson;
         $Reservation -> message = $request -> message;
         $Reservation -> package_id = $request -> package_id;
-
         $Reservation ->save();
 
         return redirect("Reservation")->with('editReservation','modification are saved');

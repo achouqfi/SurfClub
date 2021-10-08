@@ -1,3 +1,6 @@
+@auth
+@if (Auth::user())
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,25 +33,7 @@
                  <img src={{ URL::asset('/assets/img/logo.png') }} alt="" width="50px" > <h3>Safi Surf Club</h3>
             </div>
             <div class="list-group list-group-flush my-3">
-                {{-- <a href="/home" class="list-group-item list-group-item-action bg-transparent second-text active"><i
-                        class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
-                <a href="/reservation/admin" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-swimmer me-2"></i>Reservation</a>
-                <a href="/contact/admin" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-envelope me-2"></i>Message</a>
-                <a href="/newsletter/admin" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-address-card me-2"></i>Newsletter</a>
-                <a href="/package/table" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-archive me-2"></i>Package</a>
-                <a href="/event/table" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                    class="fas fa-archive me-2"></i>Event</a>
-                <a href="/gallery/table" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-photo-video me-2"></i>Gallery</a>
-                <a href="/feedBack/table" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-comment-dots me-2"></i>FeedBack</a> --}}
                 @yield('SideBar')
-
-
             </div>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -112,5 +97,8 @@
         };
     </script>
 </body>
-
 </html>
+    
+@endif
+
+@endauth

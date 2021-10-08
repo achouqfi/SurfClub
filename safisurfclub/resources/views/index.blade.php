@@ -38,7 +38,7 @@
       <div class="contact-info mr-auto">
         <i class="icofont-envelope"></i> <a href="mailto:surfsafi@gmail.com">surfsafi@gmail.com</a>
         <i class="icofont-phone"></i> <a href="https://wa.me/0671815570">0671815570</a> 
-        <i class="icofont-google-map"></i> Plage de Safi Maroc
+        <i class="icofont-google-map"></i> Plage de Safi Maroc 
       </div>
       <div class="social-links">
         <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
@@ -53,12 +53,12 @@
       <h1 class="logo mr-auto"><a href="/"> <img src="./assets/img/logo.png" alt="" width="50px" > Safi Surf Club</a></h1>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li class="active"><a href="/">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
           <li><a href="#services">Packages</a></li>
-          <li><a href="#departments">Other</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#departments">Services</a></li>
+          <li><a href="#testimonials">Témoignages</a></li>
+          <li><a href="#gallery">Galerie</a></li>
           <li><a href="#contact">Contact</a></li>
           {{-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -101,8 +101,7 @@
             <div class="content">
               <h3>Pourquoi choisir Safi surf club?</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+                Safi Surf Club vous accueille pour vous faire découvrir leur passion, le surf. Différentes formules selon votre niveau, que vous soyez seul, en duo ou en groupe. Découvrez les activités nautiques de Safi et la culture locale.
               </p>
             </div>
           </div>
@@ -113,7 +112,7 @@
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="icofont-beach-bed "></i>
                     <h4 class="mt-3">                    
-                      The best surf spot in Morocco
+                      Le meilleur spot de surf au Maroc
                     </h4>
                     <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
                   </div>
@@ -122,7 +121,7 @@
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="icofont-team"></i>
                     <h4 class="mt-3">
-                      Professional coaches
+                      Coachs professionnels
                     </h4>
                     <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
                   </div>
@@ -132,7 +131,7 @@
                     <i class="icofont-sun-rise"></i>
                   </i>
                     <h4 class="mt-3">
-                      View of the beach
+                      Vue sur la plage
                     </h4>
                     <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
                   </div>
@@ -154,12 +153,12 @@
           </div>
 
           <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-            <h3>A propos Safi surf club</h3>
+            <h3>À propos    Safi surf club</h3>
             <p>Les beaux jours arrivent, les conditions de surf hivernales, laissent désormais la place à de belles journées de vagues à la portée de toutes et de tous ! <br>
 
               Nous sommes heureux de vous accueillir pour venir profiter des bienfaits de l’océan et de ses vagues, dans le respect  des règles sanitaires. <br> <br>
               
-              Si vous avez une question ou une interrogation, on est là pour vous au 05 56 26 38 84 ou via notre formulaire de contact. <br>  <br>
+              Si vous avez une question ou une interrogation, on est là pour vous au 06 71 81 55 70 ou via notre formulaire de contact. <br>  <br>
               
               #lesurfaSafi #RassLafaa #tousensemble <br> <br>
               
@@ -242,7 +241,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Book your surf session</h2>
+          <h2>Réservez votre session de surf</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum autem magnam similique tempora esse, dignissimos dolores officiis dolorem et cupiditate temporibus inventore repellat. Obcaecati suscipit quis quisquam repudiandae repellat nobis.</p>
         </div>
 
@@ -250,26 +249,26 @@
           @csrf
           <div class="form-row">
             <div class="col-md-4 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+              <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Votre Email" data-rule="email" data-msg="Please enter a valid email" required>
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Votre Téléphone" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
               <div class="validate"></div>
             </div>
           </div>
           <div class="form-row">
             <div class="col-md-4 form-group">
-              <input type="date" name="date" class="form-control "  >
+              <input type="date" name="date" id="datePickerId" class="form-control "  >
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group">
               <select name="package_id" id="department" class="form-control">
-                <option value="" required>Select Package</option>
+                <option value="" required>Sélectionnez le forfait</option>
                     @foreach ($Packages as $package)
                       <option value="{{ $package->titre }}">{{ $package->titre }}</option>
                     @endforeach 
@@ -277,7 +276,7 @@
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group">
-              <input type="number" name="Nperson" placeholder="Number of person" class="form-control "  required>
+              <input type="number" name="Nperson" placeholder="Nombre de personne" class="form-control"  required>
               <div class="validate"></div>
             </div>
           </div>
@@ -289,9 +288,8 @@
           <div class="mb-3">
             <div class="loading">Loading</div>
             <div class="error-message"></div>
-            <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
           </div>
-          <div class="text-center"><button type="submit">Book Now</button></div>
+          <div class="text-center"><button type="submit">Reserve maintenant</button></div>
         </form>
 
       </div>
@@ -302,7 +300,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Des autres service</h2>
+          <h2>Autres services</h2>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae animi, nesciunt fugiat sint possimus deserunt! Culpa magnam quos voluptas facere, neque unde eos totam asperiores iure dolores cum officiis voluptatibus!</p>
         </div>
 
@@ -386,7 +384,7 @@
    <div class="container">
 
         <div class="section-title">
-          <h2>Event</h2>
+          <h2>Événement</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut expedita excepturi dolorem, aspernatur nesciunt totam consequuntur eaque quaerat atque optio, minus, dolores vero soluta quam vel nisi fugiat. Illum, alias!</p>
         </div>
 
@@ -411,74 +409,12 @@
       </div>
     </section><!-- End Doctors Section -->
 
-    {{-- <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Frequently Asked Questions</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="faq-list">
-          <ul>
-            <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
-                <p>
-                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-2" class="collapse" data-parent=".faq-list">
-                <p>
-                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-3" class="collapse" data-parent=".faq-list">
-                <p>
-                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-4" class="collapse" data-parent=".faq-list">
-                <p>
-                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-5" class="collapse" data-parent=".faq-list">
-                <p>
-                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
-                </p>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-
-      </div>
-    </section><!-- End Frequently Asked Questions Section --> --}}
-
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
       <div class="container">
 
         <div class="section-title">
-          <h2>Testimonials</h2>
+          <h2>Témoignages</h2>
         </div>
 
         <div class="owl-carousel testimonials-carousel">
@@ -506,7 +442,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Add Your FeedBack</h2>
+          <h2>Ajoutez vos commentaires</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum autem magnam similique tempora esse, dignissimos dolores officiis dolorem et cupiditate temporibus inventore repellat. Obcaecati suscipit quis quisquam repudiandae repellat nobis.</p>
         </div>
 
@@ -542,7 +478,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Gallery</h2>
+          <h2>Galerie</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
       </div>
@@ -587,19 +523,19 @@
               <div class="address">
                 <i class="icofont-google-map"></i>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Plage de Safi Maroc</p>
               </div>
 
               <div class="email">
                 <i class="icofont-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>surfsafi@gmail.com</p>
               </div>
 
               <div class="phone">
                 <i class="icofont-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <h4>Téléphone:</h4>
+                <p>0671815570</p>
               </div>
 
             </div>
@@ -613,16 +549,16 @@
 
               <div class="form-row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/>
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required/>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Votre Email" data-rule="email" data-msg="Please enter a valid email" required/>
                   <div class="validate"></div>
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required/>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required/>
                 <div class="validate"></div>
               </div>
               <div class="form-group">
@@ -634,7 +570,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Envoyer le message</button></div>
             </form>
 
           </div>
@@ -656,30 +592,27 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3>Safi surf Club</h3>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              Plage de Safi Maroc <br>
+              <strong>Téléphone:</strong>0671815570<br>
+              <strong>Email:</strong>surfsafi@gmail.com<br>
             </p>
           </div>
 
           <div class="col-lg-5 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li class="active"><a href="/">Home</a></li>
-              <li><a href="#about">About</a></li>
+              <li class="active"><a href="/">Accueil</a></li>
+              <li><a href="#about">À propos    </a></li>
               <li><a href="#services">Packages</a></li>
-              <li><a href="#departments">Other</a></li>
-              <li><a href="#doctors">Team</a></li>
-              <li><a href="#testimonials">Testimonials</a></li>
-              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#departments">Services</a></li>
+              <li><a href="#testimonials">Témoignages</a></li>
+              <li><a href="#gallery">Galerie</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
+            <h4>Rejoignez notre newsletter</h4>
             <form action="{{ url('newsleter') }}" method="post" >
               @csrf
               <input type="email" name="email">
@@ -691,6 +624,9 @@
       </div>
     </div>
   </footer><!-- End Footer -->
+  <script>
+      datePickerId.min = new Date().toISOString().split("T")[0];
+  </script>
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>

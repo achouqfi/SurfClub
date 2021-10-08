@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\FeedBack;
-use App\Models\Gallery;
-use App\Models\Package;
 use Illuminate\Http\Request;
+use Mail;
+
 
 class FeedBackController extends Controller
 {
@@ -31,6 +31,18 @@ class FeedBackController extends Controller
         $FeedBack -> message = $request -> message;
 
         $FeedBack ->save();
+
+        $to_email ="a.chouqfi@gmail.com";
+
+        $title="Feedback sur safi surf club";
+        $message="vous avez une nouvelle Feedback sur safi surf club:". $FeedBack;
+        // $cc="";
+        $data = array("body"=>$message);
+
+        Mail::send('mail', $data, function($message) use ($to_email, $title) {
+            $message->to($to_email)->subject($title);
+        });
+
         return redirect()->back();
     }
 
