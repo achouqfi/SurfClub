@@ -10,17 +10,12 @@ use Mail;
 class FeedBackController extends Controller
 {
     
-
-
     public function index()
     {
         //
         $FeedBack= FeedBack::paginate(7);
         return view('admin.FeedBack',["FeedBacks"=>$FeedBack]);
     }
-
-
-    
 
     public function store(Request $request)
     {
@@ -37,6 +32,7 @@ class FeedBackController extends Controller
         $title="Feedback sur safi surf club";
         $message="vous avez une nouvelle Feedback sur safi surf club:". $FeedBack;
         // $cc="";
+
         $data = array("body"=>$message);
 
         Mail::send('mail', $data, function($message) use ($to_email, $title) {
@@ -52,4 +48,5 @@ class FeedBackController extends Controller
         FeedBack::destroy($id);
         return redirect()->back()->with('dltFeedBack','Contact are deleted');
     }
+
 }

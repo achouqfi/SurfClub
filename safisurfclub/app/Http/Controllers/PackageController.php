@@ -15,7 +15,7 @@ class PackageController extends Controller
     public function index()
     {
         //affichage des Packages dans la partie admin
-        $Package= Package::paginate(6);
+        $Package= Package::paginate(3);
         return view('admin.pack',["Packages"=>$Package]);
     }
 

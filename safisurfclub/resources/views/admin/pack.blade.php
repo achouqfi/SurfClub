@@ -66,6 +66,7 @@
                         </tr>
                         @endforeach		
                         </tbody>
+                        <span>{{ $Packages->links("pagination::bootstrap-4") }}</span>
                     </table>
                 </div>
             </div>        

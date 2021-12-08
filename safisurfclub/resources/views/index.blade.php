@@ -24,6 +24,9 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -50,7 +53,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-      <h1 class="logo mr-auto"><a href="/"> <img src="./assets/img/logo.png" alt="" width="50px" > Safi Surf Club</a></h1>
+      <h1 class="logo mr-auto"><a href="/"> <img src="./assets/img/logo.png" alt="" width="50px" >Safi Surf Club</a></h1>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="/">Accueil</a></li>
@@ -408,71 +411,40 @@
     </section><!-- End Doctors Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    <section id="testimonials" class="testimonials " >
       <div class="container">
 
         <div class="section-title">
-          <h2>Témoignages</h2>
+          <h2>Terification</h2>
         </div>
+        <div class="container gallery-container">
+          <div class="tz-gallery">
+              <div class="row">
+                  <div class="col-sm-12 col-md-6">
+                      <a class="lightbox" href="./assets/img/tarif1.jpeg">
+                          <img src="./assets/img/tarif1.jpeg" alt="Bridge">
+                      </a>
+                  </div>
+                  <div class="col-sm-6 col-md-6">
+                      <a class="lightbox" href="./assets/img/tarif2.jpeg">
+                          <img src="./assets/img/tarif2.jpeg" alt="Park">
+                      </a>
+                  </div>
+              </div>
 
-        <div class="owl-carousel testimonials-carousel">
-
-          @foreach ($FeedBacks as $feedBack)
-          <div class="testimonial-wrap">
-            <div class="testimonial-item">
-              <h3>{{ $feedBack->name}}</h3>
-              <h4>Surfer</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                {{ $feedBack->message }}
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
           </div>
-          @endforeach
+      
+      </div>
+        <div class="owl-carousel testimonials-carousel">
         </div>
       </div>
 
       
     </section><!-- End Testimonials Section -->
-    <!-- ======= Appointment Section ======= -->
-    <section id="appointment" class="appointment section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Ajoutez vos commentaires</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum autem magnam similique tempora esse, dignissimos dolores officiis dolorem et cupiditate temporibus inventore repellat. Obcaecati suscipit quis quisquam repudiandae repellat nobis.</p>
-        </div>
-
-        <form action="{{ url('feedBack') }}" method="POST"  class="formInsert">
-          @csrf
-          <div class="form-row">
-            <div class="col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-6 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-              <div class="validate"></div>
-            </div>
-          </div>
-          <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-            <div class="validate"></div>
-          </div>
-          <div class="mb-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message request has been sent successfully. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Add Now</button></div>
-        </form>
-
-      </div>
-    </section><!-- End Appointment Section -->
+   
 
     <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery">
+    <section id="gallery" class="gallery faq section-bg">
       <div class="container">
 
         <div class="section-title">
@@ -568,11 +540,8 @@
               </div>
               <div class="text-center"><button type="submit">Envoyer le message</button></div>
             </form>
-
           </div>
-
         </div>
-
       </div>
     </section><!-- End Contact Section -->
 

@@ -61,6 +61,7 @@
                                 </tr>
                             @endforeach
                         </tbody>
+                    <span>{{ $Contacts->links("pagination::bootstrap-4") }}</span>
                 </table>
             </div>        
         </div>

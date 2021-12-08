@@ -12,7 +12,7 @@ class ReservationController extends Controller
     public function index()
     {
         //affichage des Reservations dans la partie admin
-        $Reservation= Reservation::paginate(7);
+        $Reservation= Reservation::paginate(5);
         return view('admin.reservation',["Reservations"=>$Reservation]);
     }
 
@@ -37,7 +37,7 @@ class ReservationController extends Controller
  
         $Reservation ->save();
 
-        $to_email ="surfsafi@gmail.com";
+        $to_email ="a.chouqfi@gmail.com";
 
         $title="reservation sur safi surf club";
         $message="vous avez un nouveau reservation sur safi surf club:". $Reservation;
